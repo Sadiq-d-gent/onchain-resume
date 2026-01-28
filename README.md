@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# Onchain Resume
 
-## Project info
+A Web3-powered resume that allows users to connect their wallet and showcase their identity, skills, and projects on-chain.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Overview
+Onchain Resume is a modern frontend application built to demonstrate how blockchain identity can be used beyond NFTs — as a personal, verifiable resume for Web3 builders.
 
-## How can I edit this code?
+This project focuses on clean UI, wallet integration, and real-world Web3 frontend patterns.
 
-There are several ways of editing your application.
+## Features
+- Wallet connection (Web3 authentication)
+- Clean and responsive UI
+- Structured resume layout
+- Web3-ready architecture for future on-chain data
+- Mobile-friendly design
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+## Tech Stack
 - React
-- shadcn-ui
 - Tailwind CSS
+- Wagmi
+- RainbowKit
+- Viem
 
-## How can I deploy this project?
+## Use Case
+- Web3 developers showcasing their work
+- Builders creating decentralized identities
+- Recruiters viewing verifiable onchain profiles
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Live Demo
+👉 https://onchain-resume-eight.vercel.app/
 
-## Can I connect a custom domain to my Lovable project?
+## Screenshots
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## What I Built
+- Frontend architecture and component structure
+- Wallet connection flow
+- Responsive UI using Tailwind CSS
+- Web3 integration with Wagmi & RainbowKit
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Future Improvements
+- Onchain storage for resume data
+- ENS / username support
+- Shareable onchain profile links
+- Multi-chain support
+
+---
+
+### Author
+**Sadiq Ahmad**  
+Frontend Developer (Web3)
