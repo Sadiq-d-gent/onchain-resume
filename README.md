@@ -1,51 +1,35 @@
-# Onchain Resume
+# Sadiq Ahmad — Personal website
 
-A Web3-powered resume that allows users to connect their wallet and showcase their identity, skills, and projects on-chain.
+A personal website for Sadiq Ahmad (Gigabyte), introducing his work as a software developer and forex trader, Ziep, and the Mariana ventures being established.
 
-## Overview
-Onchain Resume is a modern frontend application built to demonstrate how blockchain identity can be used beyond NFTs — as a personal, verifiable resume for Web3 builders.
+## Development
 
-This project focuses on clean UI, wallet integration, and real-world Web3 frontend patterns.
+```sh
+npm ci
+npm run dev
+npm run build
+npm run preview
+```
 
-## Features
-- Wallet connection (Web3 authentication)
-- Clean and responsive UI
-- Structured resume layout
-- Web3-ready architecture for future on-chain data
-- Mobile-friendly design
+Built with React, TypeScript, Vite, and Tailwind. The personal homepage lives in `src/pages/Index.tsx`, with scoped styles in `src/pages/personal.css`. The original Web3 components remain in the repository for reference but are not rendered or imported by the homepage. Wallet providers are no longer mounted.
 
-## Tech Stack
-- React
-- Tailwind CSS
-- Wagmi
-- RainbowKit
-- Viem
+## Content
 
-## Use Case
-- Web3 developers showcasing their work
-- Builders creating decentralized identities
-- Recruiters viewing verifiable onchain profiles
+- Public contact: sadiqahmadelif01@gmail.com
+- Ziep: in development; brand artwork is explicitly a concept, not a product screenshot.
+- Mariana Tech: phones and accessories venture in preparation.
+- Mariana Technology: umbrella brand being established.
+- No trading returns, fabricated metrics, verification claims, or placeholder project links.
+- Portrait supplied by Sadiq; framing uses CSS, without retouching the source image.
 
-## Live Demo
-👉 https://onchain-resume-eight.vercel.app/
+Update project statuses when they change. No contact form, analytics, wallet connection, or backend is required for this website. Email links open the visitor's email app.
 
-## Screenshots
+## Validation
 
+```sh
+npx tsc --noEmit -p tsconfig.app.json
+npx eslint src/pages/Index.tsx src/App.tsx
+npm run lint
+```
 
-## What I Built
-- Frontend architecture and component structure
-- Wallet connection flow
-- Responsive UI using Tailwind CSS
-- Web3 integration with Wagmi & RainbowKit
-
-## Future Improvements
-- Onchain storage for resume data
-- ENS / username support
-- Shareable onchain profile links
-- Multi-chain support
-
----
-
-### Author
-**Sadiq Ahmad**  
-Frontend Developer (Web3)
+The existing repository-wide lint check has pre-existing errors in `src/components/ui/command.tsx`, `src/components/ui/textarea.tsx`, and `tailwind.config.ts`. Homepage motion respects reduced-motion preferences. Mobile navigation and the Ziep project disclosure use native buttons and accessible state attributes.
