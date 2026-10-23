@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowUpRight, ArrowDown, ArrowRight, Code2, ChartNoAxesCombined, Layers3, Menu, X, Plus, Minus, Mail, Github } from 'lucide-react';
 import './personal.css';
+import { AmbientParticles } from '@/components/AmbientParticles';
+import { ziepAppUrl } from '@/config/projects';
 
 const email = 'sadiqahmadelif01@gmail.com';
 const navigation = ['About', 'Projects', 'Contact'];
@@ -25,6 +27,7 @@ export default function Index() {
   }, []);
 
   return <div className="personal-site" ref={page}>
+    <AmbientParticles />
     <a className="skip-link" href="#main">Skip to content</a>
     <header className="site-header">
       <a className="wordmark" href="#home" aria-label="Sadiq Ahmad home">sa<span>.</span></a>
@@ -63,7 +66,7 @@ export default function Index() {
         <div className="section-label"><span>02 — SELECTED VENTURES</span><span>IDEAS TAKING SHAPE</span></div>
         <div className="section-heading"><h2>What I’m <span className="serif-accent">building.</span></h2><p>Early chapters. Clear intentions.<br/>Here’s where my focus is today.</p></div>
         <article className="ziep-project">
-          <div className="project-copy"><span className="project-status"><span className="status-dot"/> IN DEVELOPMENT</span><h3>Ziep<span>Simply faster.</span></h3><p>A financial utility app being built for everyday needs in Nigeria. The ambition is simple: make the experience feel fast, clear, and effortless.</p><div className="project-tags"><span>Financial utility</span><span>Product development</span></div><button className="project-expand" aria-expanded={projectOpen} aria-controls="ziep-details" onClick={() => setProjectOpen(!projectOpen)}>Behind the project {projectOpen ? <Minus size={20}/> : <Plus size={20}/>}</button></div>
+          <div className="project-copy"><span className="project-status"><span className="status-dot"/> IN DEVELOPMENT</span><h3>Ziep<span>Simply faster.</span></h3><p>A financial utility app being built for everyday needs in Nigeria. The ambition is simple: make the experience feel fast, clear, and effortless.</p><div className="project-tags"><span>Financial utility</span><span>Product development</span></div>{ziepAppUrl ? <a className="ziep-launch" href={ziepAppUrl} target="_blank" rel="noopener noreferrer">Open Ziep <ArrowUpRight size={16}/></a> : <button className="ziep-launch" type="button" disabled>Coming soon</button>}<button className="project-expand" aria-expanded={projectOpen} aria-controls="ziep-details" onClick={() => setProjectOpen(!projectOpen)}>Behind the project {projectOpen ? <Minus size={20}/> : <Plus size={20}/>}</button></div>
           <div className="ziep-art" aria-label="Ziep brand concept artwork"><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="ziep-glass glass-panel"><span className="concept-label">A SIMPLER EVERYDAY</span><span className="ziep-word">ziep<span>↗</span></span><div className="ziep-art-bottom"><span>Simply faster.</span><ArrowUpRight size={23}/></div></div><span className="art-caption">BRAND CONCEPT · PRODUCT IN DEVELOPMENT</span></div>
           {projectOpen && <div id="ziep-details" className="project-details"><div><h4>The idea</h4><p>A calmer way to handle everyday financial utilities, with an experience designed around clarity and speed.</p></div><div><h4>My role</h4><p>Founder and developer, shaping the product direction and building the application.</p></div><div><h4>Where it stands</h4><p>Currently in development. Ziep is not yet available to the public; launch details will be shared when ready.</p></div></div>}
         </article>
